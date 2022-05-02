@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retro Cinema</title>
+    <link rel="stylesheet" href="style/tickets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Kiwi+Maru:wght@300;400;500&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<!--- header --->
+<div class="header">
+    <div class="header-logo">
+        <img src="img/logo.png" alt="logo" height="50px">
+    </div>
+    <div class="header-menu">
+        <a class="menu-item" href="index.html">Home</a>
+        <a class="menu-item" href="schedule.html">Schedule</a>
+        <a class="menu-item active-item" href="tickets.html">Tickets</a>
+        <a class="menu-item" href="contacs.html">Contacts</a>
+        <script type="text/javascript" src="https://livejs.com/live.js"></script>
+        <script src="js/submit.js" defer></script>
+    </div>
+</div>
+<!--- //header --->
+
+<!--- main block --->
+<div class="main">
+    <div class="main-form">
+        <!-- TITLE -->
+        <div class="form-title">
+            <p>Ticket Booking</p>
+        </div>
+
+        <form method="post">
+            <!-- NAME -->
+            <div class="input-container ic1">
+                <input id="name" class="input" type="text" placeholder=" " required="required"/>
+                <div class="cut"></div>
+                <label for="name" class="placeholder">Name</label>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="input-container ic2">
+                <input id="email" class="input" type="text" placeholder=" " required="required"/>
+                <div class="cut cut-short"></div>
+                <label for="email" class="placeholder">Email</label>
+            </div>
+
+            <!-- MOVIE -->
+            <div class="input-container ic3">
+                <select id="movie" class="input" required="required">
+                    <option>La La Land</option>
+                    <option>Captain America</option>
+                    <option>The Greatest Showman</option>
+                    <option>Breakfast at Tiffany's</option>
+                    <option>John Wick</option>
+                    <option>Titanic</option>
+                </select>
+                <div class="cut cut-short"></div>
+                <label for="movie" class="placeholder">Movie</label>
+            </div>
+
+            <!-- DATE -->
+            <div class="input-container ic4">
+                <input id="date" class="input" type="date" placeholder=" " required="required"/>
+                <div class="cut cut-short"></div>
+                <label for="date" class="placeholder">Date</label>
+            </div>
+
+            <!-- TIME -->
+            <div class="input-container ic5">
+                <select id="time" class="input" required="required">
+                    <option>18:00</option>
+                    <option>20:00</option>
+                    <option>22:00</option>
+                </select>
+                <div class="cut cut-short"></div>
+                <label for="time" class="placeholder">Time</label>
+            </div>
+
+            <!-- BUTTON SUBMIT -->
+            <div class="button-submit">
+                <button type="submit" class="submit">submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="main-right">
+        <div class="main-right-img">
+            <img src="img/popcorn.png" height="250px">
+        </div>
+        <div class="main-right-text">
+            <p>*after submitting the form you will <br>
+                reseive an email with e-tickets</p>
+        </div>
+    </div>
+</div>
+<!--- //main block --->
+
+<!--- footer --->
+<div class="footer">
+    <p>2022 @ Made by Yuliia Sida</p>
+</div>
+<!--- //footer --->
+</body>
+</html>

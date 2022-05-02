@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F2F2F4;
+}
+
+/***** HEADER *****/
+.header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 15px;
+
+    width: 50%;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-logo {
+    padding-left: 90px;
+}
+
+.menu-item {
+    color: #000;
+    text-decoration: none;
+}
+
+.active-item {
+    text-shadow: 0px 3px 6px #BA95BF;
+}
+
+/***** //HEADER// *****/
+
+
+/***** MAIN BLOCK *****/
+.main {
+    margin: 0px;
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/***** MAIN BLOCK - FORM *****/
+.main-form {
+    background: #bad9bf;
+
+    width: 500px;
+    height: fit-content;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-title {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 25px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.ic5 {
+    margin-bottom: 0;
+}
+
+.input {
+    border-radius: 5px;
+    border: 0;
+    box-sizing: border-box;
+    color: #595959;
+    font-size: 18px;
+    height: 40px;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.cut {
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+
+select, input {
+    font-family: 'Kiwi Maru', serif;
+}
+
+.cut-short {
+    width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+
+.placeholder {
+    color: #65657b;
+    font-family: 'Kiwi Maru', serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 10px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+}
+
+.input:focus ~ .placeholder {
+    color: #65657b;
+}
+
+.button-submit {
+    margin: 30px 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit {
+    font-family: 'Kiwi Maru', serif;
+    font-size: 15px;
+    color: #000;
+
+    background-color: #F2F2F4;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    align-self: center;
+    height: 45px;
+    width: 170px;
+}
+
+.submit:active {
+    background-color: #BA95BF;
+    color: #fff;
+}
+
+/***** //MAIN BLOCK - FORM// *****/
+
+/***** MAIN BLOCK - IMG+TEXT *****/
+.main-right img {
+    height: 320px;
+}
+
+.main-right-text {
+    font-family: 'Kiwi Maru';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 43px;
+    letter-spacing: 0.1em;
+    text-wrap: normal;
+}
+/***** //MAIN BLOCK - IMG+TEXT// *****/
+/***** //MAIN BLOCK// *****/
+
+/***** FOOTER *****/
+.footer {
+    font-family: "Century Gothic";
+    font-size: 10px;
+    text-align: right;
+    color: #323232;
+
+    float: right;
+
+    margin-top: 60px;
+    margin-right: 50px;
+    margin-bottom: 5px;
+}
+/***** //FOOTER// *****/

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F2F2F4;
+}
+
+/***** HEADER *****/
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu {
+    width: 50%;
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 15px;
+}
+
+.header-logo {
+    padding-left: 90px;
+}
+
+.menu-item {
+    color: #000;
+    text-decoration: none;
+}
+
+.active-item {
+    text-shadow: 0px 3px 6px #BA95BF;
+}
+
+/***** //HEADER// *****/
+
+/***** MAIN BLOCK *****/
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.main-content-movieblock a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content-movieblock {
+    width: 240px;
+    height: 320px;
+    margin: 50px 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.main-content-movieblock:hover {
+    opacity: 0.75;
+}
+
+.main-content-movieblock-img {
+
+}
+
+.main-content-movieblock img {
+    align-self: center;
+    width: 200px;
+    height: 270px;
+}
+
+.main-content-movieblock-text {
+    height: 30px;
+    font-family: 'Kiwi Maru', serif;
+    font-weight: lighter;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    line-height: 7px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/***** //MAIN BLOCK// *****/
+
+/***** FOOTER *****/
+.footer {
+    font-family: "Century Gothic", serif;
+    font-size: 10px;
+    color: #323232;
+    float: right;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
+/***** //FOOTER// *****/

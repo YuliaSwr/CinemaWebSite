@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F2F2F4;
+}
+
+/***** HEADER *****/
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu {
+    width: 50%;
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 15px;
+}
+
+.header-logo {
+    padding-left: 90px;
+}
+
+.menu-item {
+    color: #000;
+    text-decoration: none;
+}
+
+.active-item {
+    text-shadow: 0px 3px 6px #BA95BF;
+}
+
+/***** //HEADER// *****/
+
+/***** MAIN BLOCK *****/
+.main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h3 {
+    color: #858585;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 20px;
+}
+/***** //MAIN BLOCK// *****/
